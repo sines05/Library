@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="60.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.user.UserBorrowedBooksBarFormController">
+    <children>
+        <JFXButton layoutX="-176.0" layoutY="15.0" text=" " />
+        <Label fx:id="lblId" layoutX="28.0" layoutY="20.0" text="1">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblUserID" layoutX="140.0" layoutY="20.0" text="1">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblAmount" layoutX="260.0" layoutY="20.0" text="02 Books">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDueDate" layoutX="385.0" layoutY="20.0" text="13-03-2024">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblBorrowedDate" layoutX="600.0" layoutY="20.0" text="25-02-2024">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Pane fx:id="returnBtnPane" layoutX="765.0" layoutY="8.0" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: black; -fx-background-radius: 12;">
+            <children>
+                <ImageView fx:id="returnBtnImg" fitHeight="24.0" fitWidth="24.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/icon/returnIconBtnWhite.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="lblReturn" layoutX="40.0" layoutY="11.0" text="Return" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <JFXButton layoutX="765.0" layoutY="8.0" onAction="#btnReturnOnAction" onMouseEntered="#btnReturnOnMouseEntered" onMouseExited="#btnReturnOnMouseExited" prefHeight="40.0" prefWidth="90.0" style="-fx-background-radius: 12;" text=" " />
+    </children>
+</Pane>

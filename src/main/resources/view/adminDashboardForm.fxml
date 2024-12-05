@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1009.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.AdminDashboardFormController">
+   <children>
+      <Pane layoutX="46.0" layoutY="488.0" prefHeight="114.0" prefWidth="388.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="63.0" layoutX="23.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/img/BEE 2.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#3d3e3e" layoutX="136.0" layoutY="44.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fill="#ffec8b" layoutX="136.0" layoutY="95.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="157.0" layoutY="28.0" prefHeight="32.0" prefWidth="287.0" text="Total Borrowed Books ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="157.0" layoutY="74.0" prefHeight="32.0" prefWidth="308.0" text="Total Returned Books ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Line endX="-11.268310546875" endY="77.54852294921875" layoutX="112.0" layoutY="22.0" startX="-11.268310546875" startY="16.5" />
+         </children>
+      </Pane>
+      <Pane layoutX="377.0" layoutY="36.0" prefHeight="80.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <Pane layoutX="25.0" layoutY="19.0" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #D7D7D7; -fx-background-radius: 12;">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="42.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icon/userIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Line endX="-115.84527587890625" endY="22.0" layoutX="210.0" layoutY="51.0" startX="-115.84527587890625" startY="-35.5754508972168" />
+            <Label fx:id="lblTotalUserCount" layoutX="107.0" layoutY="13.0" prefHeight="32.0" prefWidth="61.0" text="0150">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="55.0" prefHeight="15.0" prefWidth="74.0" text="Total User Base">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="668.0" layoutY="14.0" prefHeight="302.0" prefWidth="325.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <Label layoutX="69.0" layoutY="14.0" text="Overdue Borrowers">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="9.0" layoutY="54.0" prefHeight="234.0" prefWidth="308.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+               <content>
+                  <VBox fx:id="vBoxOverDueBorrowers" prefHeight="234.0" prefWidth="301.0" spacing="3.0" style="-fx-background-color: white;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane layoutX="665.0" layoutY="320.0" prefHeight="318.0" prefWidth="331.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <Label layoutX="78.0" layoutY="14.0" text="BeeHive Admins">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="7.0" layoutY="46.0" prefHeight="262.0" prefWidth="317.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+               <content>
+                  <VBox fx:id="vBoxAdmins" spacing="3.0" style="-fx-background-color: white;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane layoutX="445.0" layoutY="479.0" prefHeight="166.0" prefWidth="214.0" style="-fx-background-color: transaparent; -fx-background-radius: 12;">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="187.0" layoutX="25.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/img/login1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="24.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot; Discover worlds, broaden minds &quot;" wrappingWidth="187.0">
+               <font>
+                  <Font name="System Italic" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="377.0" layoutY="136.0" prefHeight="80.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <Pane layoutX="20.0" layoutY="17.0" prefHeight="51.0" prefWidth="50.0" style="-fx-background-color: #D7D7D7; -fx-background-radius: 12;">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icon/booksIconBlack.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Line endX="-115.84527587890625" endY="20.5" layoutX="210.0" layoutY="51.0" startX="-115.84527587890625" startY="-35.5754508972168" />
+            <Label layoutX="107.0" layoutY="53.0" prefHeight="15.0" prefWidth="80.0" text="Total Book Count">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalBookCount" layoutX="107.0" layoutY="15.0" prefHeight="32.0" prefWidth="61.0" text="0150">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="377.0" layoutY="233.0" prefHeight="80.0" prefWidth="201.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <Pane layoutX="14.0" layoutY="17.0" prefHeight="51.0" prefWidth="61.0" style="-fx-background-color: #D7D7D7; -fx-background-radius: 12;">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icon/branchesIconBlack.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Line endX="-115.84527587890625" endY="61.39457702636719" layoutX="210.0" layoutY="13.0" startX="-115.84527587890625" startY="2.5" />
+            <Label layoutX="109.0" layoutY="59.0" prefHeight="15.0" prefWidth="68.0" text="Branch Count">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalBranchCount" layoutX="108.0" layoutY="17.0" text="0010">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pieChartPane" layoutX="25.0" layoutY="36.0" prefHeight="130" prefWidth="130">
+         <PieChart fx:id="pieChart" layoutX="18.0" layoutY="15.0" prefHeight="130" prefWidth="130"/>
+      </Pane>
+      </children>
+</Pane>

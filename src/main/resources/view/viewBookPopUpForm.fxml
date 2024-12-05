@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="563.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.ViewBookPopUpFormController">
+   <children>
+      <JFXButton layoutX="-46.0" layoutY="2.0" text=" " />
+      <Pane layoutX="11.0" layoutY="10.0" prefHeight="54.0" prefWidth="61.0" style="-fx-background-color: #D7D7D7; -fx-background-radius: 10;" />
+      <Label layoutX="81.0" layoutY="22.0" text="View Book">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane fx:id="exitPane" layoutX="485.0" layoutY="6.0" prefHeight="54.0" prefWidth="48.0" style="-fx-background-radius: 10;" />
+      <JFXButton layoutX="481.0" layoutY="18.0" onAction="#btnExitOnAction" onMouseEntered="#btnExitOnMouseEntered" onMouseExited="#btnExitOnMouseExited" prefHeight="40.0" prefWidth="51.0" style="-fx-background-radius: 10;" text=" " />
+      <Pane fx:id="closePane" layoutX="183.0" layoutY="386.0" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblClose" layoutX="71.0" layoutY="17.0" prefHeight="25.0" prefWidth="78.0" text="CLOSE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="-2.0" layoutY="4.0" onAction="#btnCloseOnAction" onMouseEntered="#btnCloseOnMouseEntered" onMouseExited="#btnCloseOnMouseExited" prefHeight="40.0" prefWidth="201.0" style="-fx-background-radius: 10;" text=" " />
+         </children>
+      </Pane>
+      <Pane layoutX="13.0" layoutY="73.0" prefHeight="312.0" prefWidth="535.0" style="-fx-background-color: #FAFAD2; -fx-background-radius: 10; -fx-border-color: #DDDDDD; -fx-border-radius: 10;">
+         <children>
+            <Line endX="130.7288818359375" endY="-1.52587890625E-5" layoutX="116.0" layoutY="48.49" startX="-100.0" stroke="#828282" />
+            <Line endX="130.7288818359375" endY="-1.52587890625E-5" layoutX="116.0" layoutY="87.49" startX="-100.0" stroke="#828282" />
+            <Line endX="130.7288818359375" endY="-1.52587890625E-5" layoutX="116.0" layoutY="126.49" startX="-100.0" stroke="#828282" />
+            <Line endX="130.7288818359375" endY="-1.52587890625E-5" layoutX="116.0" layoutY="167.49" startX="-100.0" stroke="#828282" />
+            <Line endX="103.63812255859375" endY="-27.362899780273438" layoutX="180.01" layoutY="46.0" startX="103.63813018798828" startY="222.5" stroke="#828282" />
+            <Label layoutX="27.0" layoutY="29.0" text="Book ID : " />
+            <Label fx:id="lblId" layoutX="97.0" layoutY="29.0" text="1" />
+            <Label layoutX="27.0" layoutY="68.0" text="Name : " />
+            <Label layoutX="27.0" layoutY="107.0" text="Type : " />
+            <Label layoutX="27.0" layoutY="149.0" text="Language : " />
+            <Label layoutX="24.0" layoutY="214.0" text="Saved by : " />
+            <Label fx:id="lblSavedBy" layoutX="95.0" layoutY="214.0" text="THAO" />
+            <Label layoutX="90.0" layoutY="239.0" text="(Admin)" />
+            <Label fx:id="lblName" layoutX="85.0" layoutY="69.0" prefHeight="17.0" prefWidth="109.0" text=" Life Of Pi" />
+            <Label fx:id="lblType" layoutX="78.0" layoutY="108.0" text="Educational" />
+            <Label fx:id="lblLanguage" layoutX="111.0" layoutY="149.0" text="English" />
+            <Label fx:id="Author" layoutX="106.0" layoutY="181.0" text="Unknow " />
+            <Label layoutX="24.0" layoutY="181.0" text="Author : " />
+            <ImageView fx:id="imgQRCode" fitHeight="150" fitWidth="150" layoutX="337.0" layoutY="52.0" />
+
+
+         </children>
+      </Pane>
+      <ImageView fx:id="imgExit" fitHeight="24.0" fitWidth="24.0" layoutX="497.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/closeIconBlack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.89" fitWidth="41.68" layoutX="21.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/booksIconBlack.png" />
+         </image>
+      </ImageView>
+      <Line endX="128.5" endY="96.01000213623047" layoutX="126.0" layoutY="177.49" startX="-95.5" startY="96.01000213623047" stroke="#828282" />
+   </children>
+</Pane>

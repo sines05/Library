@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="631.0" style="-fx-background-color: #FFEC8B; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.AddBookPopUpFormController">
+    <children>
+        <JFXButton layoutX="-43.0" layoutY="2.0" prefHeight="25.0" prefWidth="0.0" text=" " />
+        <Pane layoutX="13.0" layoutY="17.0" prefHeight="42.0" prefWidth="35.0" style="-fx-background-color: #D7D7D7; -fx-background-radius: 10;">
+            <children>
+                <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="1.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assests/icon/booksIconBlack.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label layoutX="62.0" layoutY="24.0" prefHeight="30.0" prefWidth="108.0" text="Add Book">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Pane fx:id="closePane" layoutX="555.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" style="-fx-background-radius: 10;" />
+        <Line endX="461.5" endY="-64.5" layoutX="149.0" layoutY="128.0" startX="-142.0" startY="-64.5" />
+        <JFXButton layoutX="583.0" layoutY="23.0" onAction="#btnCloseOnAction" onMouseEntered="#btnCloseOnMouseEntered" onMouseExited="#btnCloseOnMouseExited" prefHeight="33.0" prefWidth="19.0" style="-fx-background-radius: 10;" text=" " />
+        <Pane fx:id="cancelPane" layoutX="398.0" layoutY="18.0" prefHeight="42.0" prefWidth="84.0" style="-fx-background-color: #D7D7D7; -fx-background-radius: 10;">
+            <children>
+                <Label fx:id="lblCancel" layoutX="9.0" prefHeight="42.0" prefWidth="67.0" text="CANCEL">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="-1.0" layoutY="-2.0" onAction="#btnCancelOnAction" onMouseEntered="#btnCancelOnMouseEntered" onMouseExited="#btnCancelOnMouseExited" prefHeight="33.0" prefWidth="67.0" style="-fx-background-radius: 10;" text=" " />
+            </children>
+        </Pane>
+        <Pane fx:id="addPane" layoutX="492.0" layoutY="18.0" prefHeight="42.0" prefWidth="84.0" style="-fx-background-color: black; -fx-background-radius: 10;" />
+        <JFXButton layoutX="500.0" layoutY="17.0" onAction="#btnAddOnAction" onMouseEntered="#btnAddOnMouseEntered" onMouseExited="#btnAddOnMouseExited" prefHeight="42.0" prefWidth="67.0" style="-fx-background-radius: 10;" text=" " />
+        <TextField fx:id="txtName" layoutX="7.0" layoutY="67.0" onAction="#txtNameOnAction" onKeyPressed="#txtNameOnKeyPressed" prefHeight="33.0" prefWidth="241.0" promptText="  Name" style="-fx-border-color: #727374; -fx-border-radius: 12px; -fx-background-color: white; -fx-background-radius: 12px;">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtLanguage" layoutX="8.0" layoutY="116.0" onAction="#txtLanguageOnAction" onKeyPressed="#txtLanguageOnKeyPressed" prefHeight="33.0" prefWidth="241.0" promptText="  Language" style="-fx-border-color: #727374; -fx-border-radius: 12px; -fx-background-color: white; -fx-background-radius: 12px;">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtType" layoutX="8.0" layoutY="165.0" onAction="#txtTypeOnAction" onKeyPressed="#txtTypeOnKeyPressed" prefHeight="33.0" prefWidth="241.0" promptText="  Type (Ex:- Educational)" style="-fx-border-color: #727374; -fx-border-radius: 12px; -fx-background-color: white; -fx-background-radius: 12px;">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label fx:id="lblQuantityAlert" layoutX="125.0" layoutY="10.0" prefHeight="16.0" prefWidth="167.0" textFill="RED">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblLanguageAlert" layoutX="24.0" layoutY="149.0" prefHeight="16.0" prefWidth="167.0" textFill="RED">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblTypeAlert" layoutX="17.0" layoutY="247.0" prefHeight="8.0" prefWidth="191.0" textFill="RED">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <ListView fx:id="lstBooks" layoutX="10.0" layoutY="262.0" onMouseClicked="#onBookSelected" prefHeight="227.0" prefWidth="612.0" />
+        <ImageView fx:id="imgClose" fitHeight="24.0" fitWidth="24.0" layoutX="579.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assests/icon/closeIconBlack.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="txtAuthor" layoutX="7.0" layoutY="214.0" onAction="#txtTypeOnAction" onKeyPressed="#txtTypeOnKeyPressed" prefHeight="33.0" prefWidth="241.0" promptText="Author" style="-fx-border-color: #727374; -fx-border-radius: 12px; -fx-background-color: white; -fx-background-radius: 12px;">
+            <font>
+                <Font size="10.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label fx:id="lblAuthorAlert" layoutX="10.0" layoutY="288.0" prefHeight="16.0" prefWidth="167.0" textFill="RED">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblAdd" layoutX="519.0" layoutY="25.0" prefHeight="30.0" prefWidth="48.0" text="ADD" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imgBookCover" fitHeight="184.0" fitWidth="160.0" layoutX="260.0" layoutY="67.0" preserveRatio="true" />
+        <ImageView fx:id="imgQRCode" fitHeight="184.0" fitWidth="184.0" layoutX="440.0" layoutY="73.0" />
+      <TextField fx:id="txtQuantity" layoutX="175.0" layoutY="30.0" onAction="#txtQuantityOnAction" onKeyPressed="#txtQuantityOnKeyPressed" prefHeight="25.0" prefWidth="67.0" promptText="Quantity" style="-fx-border-color: #727374; -fx-border-radius: 12px; -fx-background-color: white; -fx-background-radius: 12px;">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="lblNameAlert" layoutX="45.0" layoutY="100.0" prefHeight="16.0" prefWidth="167.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+
+    </children>
+</Pane>

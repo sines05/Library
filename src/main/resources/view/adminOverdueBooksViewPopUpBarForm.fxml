@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="68.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.AdminOverdueBooksViewPopUpBarFormController">
+    <children>
+        <Label fx:id="lblId" layoutX="60.0" layoutY="23.0" text="1">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblName" layoutX="210.0" layoutY="23.0" text="alphabet">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblType" layoutX="400.0" layoutY="23.0" text="Educational">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblLanguage" layoutX="590.0" layoutY="23.0" text="English">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

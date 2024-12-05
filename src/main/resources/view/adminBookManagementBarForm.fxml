@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="38.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.AdminBookManagementBarFormController">
+   <children>
+      <Label fx:id="lblId" layoutX="8.0" layoutY="7.0" prefHeight="25.0" prefWidth="31.0" text="1">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="39.0" layoutY="7.0" prefHeight="25.0" prefWidth="264.0" text="Hibernate-Core">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblType" layoutX="306.0" layoutY="9.0" prefHeight="25.0" prefWidth="172.0" text="Educational">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLanguage" layoutX="460.0" layoutY="9.0" prefHeight="25.0" prefWidth="22.0" text="English">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailability" layoutX="580.0" layoutY="9.0" prefHeight="25.0" prefWidth="88.0" text="Available">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgDelete" fitHeight="24.0" fitWidth="24.0" layoutX="672.0" layoutY="7.0" onMouseClicked="#imgDeleteOnMouseClicked" onMouseEntered="#imgDeleteOnMouseEntered" onMouseExited="#imgDeleteOnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/deleteIconBlack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgView" fitHeight="24.0" fitWidth="24.0" layoutX="704.0" layoutY="7.0" onMouseClicked="#imgViewOnMouseClicked" onMouseEntered="#imgViewOnMouseEntered" onMouseExited="#imgViewOnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/viewIconBlack.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgEdit" fitHeight="24.0" fitWidth="24.0" layoutX="648.0" layoutY="7.0" onMouseClicked="#imgEditOnMouseClicked" onMouseEntered="#imgEditOnMouseEntered" onMouseExited="#imgEditOnMouseExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/editIconBlack.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblAuthor" layoutX="763.0" layoutY="7.0" text="unknow">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

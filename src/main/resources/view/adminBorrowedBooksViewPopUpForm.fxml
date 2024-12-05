@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white; -fx-background-radius: 12;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.AdminBorrowedBooksViewPopUpFormController">
+    <children>
+        <Pane layoutX="26.0" layoutY="25.0" prefHeight="380.0" prefWidth="750.0" style="-fx-background-color: white; -fx-background-radius: 12; -fx-border-color: #E8E8E8; -fx-border-radius: 12;">
+            <children>
+                <Line endX="610.0" endY="0.9999923706054688" layoutX="118.0" layoutY="54.0" startX="-91.00001525878906" startY="0.9999923706054688" stroke="#e8e8e8" />
+                <Label layoutX="60.0" layoutY="24.0" text="Book ID">
+                    <font>
+                        <Font size = "15.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="240" layoutY="24.0" text = "Name">
+                    <font>
+                        <Font size = "15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="430.0" layoutY="24.0" text="Type">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="600.0" layoutY="24.0" text="Language">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <ScrollPane layoutX="10.0" layoutY="57.0" prefHeight="320.0" prefWidth="737.0" style="-fx-background-color: white;">
+                    <content>
+                        <VBox fx:id="vBox" prefHeight="495.0" prefWidth="1035.0" style="-fx-background-color: white;" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </Pane>
+        <Pane layoutX="26.0" layoutY="430.0" prefHeight="115.0" prefWidth="408.0" style="-fx-background-color: white; -fx-background-radius: 12; -fx-border-color: #E8E8E8; -fx-border-radius: 12;">
+            <children>
+                <Label layoutX = "34.0" layoutY="14.0" text="ID">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Label>
+                <Label fx:id = "lblId" layoutX="37.0" layoutY="63.0" text="5">
+                    <font>
+                        <Font size="30.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="122.0" layoutY="21.0" text="Total Books :">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="122.0" layoutY="68.0" text="Due Date :">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblTotalBooks" layoutX="258.0" layoutY="21.0" text="04 Books">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblDueDate" layoutX="237.0" layoutY="68.0" text="13 - 12 - 2024">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Line endX="5.5" endY="43.0" layoutX="78.0" layoutY="63.0" startX="5.5459442138671875" startY="-47.99774169921875" />
+            </children>
+        </Pane>
+        <Pane fx:id="closePane" layoutX="530" layoutY="450.0" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: black; -fx-background-radius: 12; ">
+            <children>
+                <Label fx:id="lblClose" layoutX="68.0" layoutY="23.0" text="CLOSE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <JFXButton layoutX="530.0" layoutY="450.0" onAction="#btnCloseOnAction" onMouseEntered="#btnCloseOnMouseEntered" onMouseExited="#btnCloseOnMouseExited" prefHeight="70.0" prefWidth="200.0" style="-fx-background-radius: 10;" text=" "/>
+        <Pane layoutX="753.0" layoutY="76.0" prefHeight="325.0" prefWidth="20.6" style="-fx-background-color: white; -fx-background-radius: 0 0 12 0;" />
+        <Pane layoutX="28.0" layoutY="380.0" prefHeight="20" prefWidth="740.0" style="-fx-background-color: white; -fx-background-radius: 0 0 12 0;" />
+    </children>
+</Pane>

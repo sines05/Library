@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="643.0" prefWidth="945.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.controller.admin.AdminBookManagementFormController">
+   <children>
+      <Pane layoutX="15.0" layoutY="92.0" prefHeight="544.0" prefWidth="922.0" style="-fx-background-color: white; -fx-background-radius: 12px;">
+         <children>
+            <Line endX="799.0" layoutX="121.0" layoutY="71.0" startX="-100.0" />
+            <HBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="14.0" prefHeight="60.0" prefWidth="842.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="61.0" text="ID">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="30.0" prefHeight="25.0" prefWidth="265.0" text="Name">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="30.0" prefHeight="25.0" prefWidth="138.0" text="Type">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="45.0" layoutY="30.0" prefHeight="25.0" prefWidth="132.0" text="Language">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="30.0" prefHeight="25.0" prefWidth="123.0" text="Availability">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="79.0" layoutY="30.0" prefHeight="25.0" prefWidth="101.0" text="Action">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="261.0" layoutY="28.0" prefHeight="25.0" prefWidth="109.0" text="Author">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane layoutX="21.0" layoutY="75.0" prefHeight="463.0" prefWidth="889.0" style="-fx-background-color: white;">
+               <content>
+                  <VBox fx:id="vBoxBookManage" prefHeight="454.0" prefWidth="891.0" style="-fx-background-color: white;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane fx:id="searchPane" layoutX="628.0" layoutY="31.0" prefHeight="46.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 12;">
+         <children>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="21.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/searchIcon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtSearch" layoutX="67.0" onAction="#txtSearchOnAction" onMouseMoved="#txtSearchOnMouseMoved" prefHeight="44.0" prefWidth="210.0" promptText="Search by ID or Name" style="-fx-background-color: white; -fx-background-radius: 0 12 12 0;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Text layoutX="37.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Management">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Pane fx:id="AddBookPane" layoutX="464.0" layoutY="32.0" prefHeight="44.0" prefWidth="136.0" style="-fx-background-color: black; -fx-background-radius: 12;">
+         <children>
+            <Label fx:id="lblAddBook" layoutX="44.0" layoutY="12.0" text="Add Book" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton onAction="#btnAddBookOnAction" onMouseEntered="#btnAddBookOnMouseEntered" onMouseExited="#btnAddBookOnMouseExited" prefHeight="44.0" prefWidth="136.0" style="-fx-background-radius: 12;" text=" " />
+            <ImageView fx:id="imgAdd" fitHeight="24.0" fitWidth="24.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/addIconWhite.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="lblSearchAlert" layoutX="621.0" layoutY="71.0" prefHeight="16.0" prefWidth="0.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
